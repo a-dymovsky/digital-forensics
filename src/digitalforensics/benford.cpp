@@ -5,7 +5,7 @@
 
 namespace digitalforensics {
 
-double expceted_frequency(const int digit) {
+double expected_frequency(const int digit) {
     assert(digit >= 1 && digit <= 9);
     return std::log10(1.0+1.0/static_cast<double>(digit));
 }
