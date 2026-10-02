@@ -36,7 +36,7 @@ add_library(digital_forensics_core STATIC src/digitalforensics/benfordd.cpp)
 add_library(digital_forensics::core ALIAS digital_forensics_core)
 target_include_directories(digital_forensics_core PUBLIC ${PROJECT_SOURCE_DIR}/src)
 target_link_libraries(digital_forensics_core PRIVATE digital_forensics_options)
-add_executable(digitalforensics src/main.cpp)
+add_executable(digital_forensics src/main.cpp)
 target_link_libraries(digital_forensics PRIVATE digital_forensics::core digital_forensics_options)
 
 include(CTesT)
