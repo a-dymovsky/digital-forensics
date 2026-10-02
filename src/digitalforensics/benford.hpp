@@ -5,5 +5,5 @@
 
 namespace digitalforensics {
     [[nodiscard]] double expected_frequency(int digit);
-    [[nodiscard]] std:optional<int> leading_digit(std::string_view token) noexcept;
+    [[nodiscard]] std::optional<int> leading_digit(std::string_view token) noexcept;
 }
