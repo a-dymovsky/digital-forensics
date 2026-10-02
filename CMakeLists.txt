@@ -32,7 +32,7 @@ if(DIGITAL_FORENSICS_SANITIZERS)
 		-fsanitize = address, undefined)
 endif()
 
-add_library(digital_forensics_core STATIC src/digitalforensics/benfordd.cpp)
+add_library(digital_forensics_core STATIC src/digitalforensics/benford.cpp)
 add_library(digital_forensics::core ALIAS digital_forensics_core)
 target_include_directories(digital_forensics_core PUBLIC ${PROJECT_SOURCE_DIR}/src)
 target_link_libraries(digital_forensics_core PRIVATE digital_forensics_options)
