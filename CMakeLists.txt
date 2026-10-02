@@ -39,7 +39,7 @@ target_link_libraries(digital_forensics_core PRIVATE digital_forensics_options)
 add_executable(digital_forensics src/main.cpp)
 target_link_libraries(digital_forensics PRIVATE digital_forensics::core digital_forensics_options)
 
-include(CTesT)
+include(CTest)
 if(BUILD_TESTING AND PROJECT_IS_TOP_LEVEL)
 	add_subdirectory(tests)
 endif()
