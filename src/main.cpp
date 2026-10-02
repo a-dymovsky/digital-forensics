@@ -15,7 +15,7 @@ void print_reference_distribution() {
 	for (int d = 1; d <=9; ++d) {
 		const double pct = digitalforensics::expected_frequency(d) * 100.0;
 		const auto bar = static_cast<std::string::size_type>(std::lround(pct));
-		std::cout << " " << d << " " << std::setw(4) << pct << "%" << std::string(bar, '#') << '\n';
+		std::cout << " " << d << " " << std::setw(4) << pct << "%" << " " << std::string(bar, '#') << '\n';
 	}
 }
 }
